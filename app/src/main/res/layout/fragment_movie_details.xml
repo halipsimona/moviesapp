@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".allmovies.MovieDetailsFragment">
+
+    <ImageView
+        android:id="@+id/moviePoster"
+        android:layout_width="@dimen/spacing_80dp"
+        android:layout_height="@dimen/spacing_80dp"
+        android:layout_margin="@dimen/spacing_16dp"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        android:contentDescription="@string/movie_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/movieImage"
+        android:layout_width="@dimen/spacing_80dp"
+        android:layout_height="@dimen/spacing_80dp"
+        android:layout_margin="@dimen/spacing_16dp"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        android:contentDescription="@string/movie_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movieTitle"
+        style="@style/label_movie_title"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_16dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/moviePoster"
+        tools:text="Forrest Gump" />
+
+    <TextView
+        android:id="@+id/releaseDate"
+        style="@style/label_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieTitle"
+        tools:text="Release date: 09-07-2022" />
+
+    <TextView
+        android:id="@+id/movieRevenue"
+        style="@style/label_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        app:drawableStartCompat="@drawable/baseline_attach_money_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/releaseDate"
+        tools:text="Revenue: 100k" />
+
+    <TextView
+        android:id="@+id/movieBudget"
+        style="@style/label_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        app:drawableStartCompat="@drawable/baseline_attach_money_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieRevenue"
+        tools:text="Budget: 20k" />
+
+    <TextView
+        android:id="@+id/genres"
+        style="@style/label_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieBudget"
+        tools:text="Romance, Comedy" />
+
+    <TextView
+        android:id="@+id/overview"
+        style="@style/label_movie"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_8dp"
+        android:padding="@dimen/spacing_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genres"
+        tools:text="Overview" />
+
+    <TextView
+        android:id="@+id/homepage"
+        style="@style/label_movie"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overview"
+        tools:text="More on: " />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">moviesapp</string>
+    <string name="username_label">Username</string>
+    <string name="email_label">E-mail</string>
+    <string name="login">Log In</string>
+    <string name="login_password_label">Password</string>
+    <string name="sign_up_message">Don\'t have an account? Sign up here</string>
+    <string name="sign_up_here">Sign up here</string>
+    <string name="sign_up">Sign up</string>
+    <string name="preference_file_key">Preference file key</string>
+    <string name="user_id">user_id</string>
+    <string name="user_email">user_email</string>
+    <string name="movie_image">Movie image</string>
+    <string name="language_label">Language: %s</string>
+    <string name="release_date_label">Release date: %s</string>
+    <string name="revenue_label">Revenue: %s M</string>
+    <string name="budget_label">Budget: %s M</string>
+    <string name="more_on">More on: %s</string>
+    <string name="see_more">\t\t…See more</string>
+    <string name="see_less">\nSee less</string>
+    <string name="add_to_watchlist">Add to watchlist</string>
+</resources>

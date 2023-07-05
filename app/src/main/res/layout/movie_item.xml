@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/spacing_8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/movieImage"
+        android:layout_width="@dimen/spacing_120dp"
+        android:layout_height="@dimen/spacing_70dp"
+        android:layout_margin="@dimen/spacing_16dp"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        android:contentDescription="@string/movie_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movieTitle"
+        style="@style/label_movie"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/movieImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Forrest Gump" />
+
+    <TextView
+        android:id="@+id/voteAverage"
+        style="@style/label_movie"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/movieImage"
+        app:layout_constraintTop_toBottomOf="@+id/movieTitle"
+        tools:text="7.7"
+        app:drawableStartCompat="@drawable/baseline_star_border_24" />
+
+    <TextView
+        android:id="@+id/addToWatchlist"
+        style="@style/label_movie"
+        android:text="@string/add_to_watchlist"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/movieImage"
+        app:layout_constraintTop_toBottomOf="@+id/voteAverage"
+        app:drawableStartCompat="@drawable/baseline_add_circle_outline_24" />
+
+
+    <TextView
+        android:id="@+id/releaseDate"
+        style="@style/label_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addToWatchlist"
+        tools:text="Release date: 09-07-2022" />
+
+    <TextView
+        android:id="@+id/movieLanguage"
+        style="@style/label_movie"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/releaseDate"
+        tools:text="Language: en" />
+
+    <TextView
+        android:id="@+id/overview"
+        style="@style/label_movie"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginStart="@dimen/spacing_8dp"
+        android:layout_marginTop="@dimen/spacing_8dp"
+        android:layout_marginEnd="@dimen/spacing_8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieLanguage"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Overview" />
+
+    <TextView
+        android:id="@+id/horizontalLine"
+        android:layout_height="@dimen/spacing_4dp"
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/spacing_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/overview" />
+</androidx.constraintlayout.widget.ConstraintLayout>

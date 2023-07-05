@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="input_textbox_style" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginStart">@dimen/spacing_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_16dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/spacing_14dp</item>
+        <item name="errorEnabled">true</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="android:fontFamily">@font/bariol_regular_webfont</item>
+    </style>
+
+    <style name="default_button_style">
+        <item name="android:fontFamily">@font/bariol_regular_webfont</item>
+        <item name="android:textSize">@dimen/spacing_16dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_16dp</item>
+        <item name="android:layout_marginRight">@dimen/spacing_16dp</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_16dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@color/purple_200</item>
+        <item name="cornerRadius">@dimen/spacing_4dp</item>
+    </style>
+
+    <style name="label_link">
+        <item name="android:fontFamily">@font/bariol_regular_webfont</item>
+        <item name="android:textSize">@dimen/spacing_16dp</item>
+        <item name="android:textColorLink">@color/link_blue</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="label_movie">
+        <item name="android:fontFamily">@font/bariol_regular_webfont</item>
+        <item name="android:textSize">@dimen/spacing_14dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="label_movie_title">
+        <item name="android:fontFamily">@font/bariol_bold_webfont</item>
+        <item name="android:textSize">@dimen/spacing_24dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>
