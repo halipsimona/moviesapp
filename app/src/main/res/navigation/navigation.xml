@@ -48,4 +48,9 @@
             app:argType="com.example.moviesapp.retrofit.MovieDetails"
             app:nullable="false" />
     </fragment>
+    <fragment
+        android:id="@+id/watchlistFragment"
+        android:name="com.example.moviesapp.watchlist.WatchlistFragment"
+        android:label="fragment_watchlist"
+        tools:layout="@layout/fragment_watchlist" />
 </navigation>

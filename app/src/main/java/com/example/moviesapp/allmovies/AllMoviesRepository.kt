@@ -2,10 +2,12 @@ package com.example.moviesapp.allmovies
 
 import com.example.moviesapp.retrofit.ApiMovie
 import com.example.moviesapp.retrofit.MovieListInfo
+import com.example.moviesapp.retrofit.WatchlistData
 import com.example.moviesapp.utils.API_KEY
 import com.example.moviesapp.utils.Failure
 import com.example.moviesapp.utils.Success
 import com.example.moviesapp.utils.Result
+import com.example.moviesapp.utils.TOKEN
 import com.example.moviesapp.utils.retrofitService
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.coroutines.flow.flow
@@ -79,5 +81,20 @@ class AllMoviesRepository(
 
     suspend fun getMovieDetails(movieId: String) = flow {
         emit(retrofitGetMovieDetails(movieId))
+    }
+
+    private suspend fun retrofitAddToWatchList(accountId: String, movieId: String) = retrofitService.addToWatchList(TOKEN, accountId, WatchlistData("movie", movieId.toInt(), true)).run {
+        val response = awaitResponse()
+        if(response.isSuccessful){
+            response.body()?.let {
+                Success(it)
+            }
+        } else {
+            Failure(response.message())
+        }
+    }
+
+    suspend fun addToWatchList(accountId: String, movieId: String) = flow {
+        emit(retrofitAddToWatchList(accountId, movieId))
     }
 }

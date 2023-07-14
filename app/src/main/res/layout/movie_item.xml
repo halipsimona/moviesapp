@@ -63,6 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_8dp"
         android:layout_marginTop="@dimen/spacing_8dp"
+        app:layout_goneMarginTop="@dimen/spacing_24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addToWatchlist"
         tools:text="Release date: 09-07-2022" />

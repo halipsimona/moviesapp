@@ -19,4 +19,5 @@
     <string name="see_more">\t\t…See more</string>
     <string name="see_less">\nSee less</string>
     <string name="add_to_watchlist">Add to watchlist</string>
+    <string name="added_to_watchlist">Added to watchlist</string>
 </resources>
